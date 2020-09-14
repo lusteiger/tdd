@@ -9,9 +9,7 @@ public class MommifierTest {
     void should_return_exception_when_input_empty_string() {
         Mommifier mommifier = new Mommifier();
         String input = null;
-        Assertions.assertThrows(IllegalArgumentException.class, () -> {
-            mommifier.covert(input);
-        });
+        Assertions.assertThrows(IllegalArgumentException.class, () -> mommifier.covert(input));
     }
 
     @Test
