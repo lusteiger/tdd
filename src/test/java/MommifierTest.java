@@ -38,4 +38,13 @@ public class MommifierTest {
         assertEquals(result,input);
     }
 
+    @Test
+    void should_return_itself_when_input_vowel_more_then_30percent_but_continuous() throws Exception{
+        Mommifier mommifier = new Mommifier();
+        String input = "moneey";
+        String result = mommifier.covert(input);
+        String expected = "monemommyey";
+        assertEquals(result,expected);
+    }
+
 }
